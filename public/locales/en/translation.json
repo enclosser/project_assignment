@@ -4,5 +4,27 @@
     "logIn": "Log in",
     "logOut": "Log out",
     "signUp": "Sign up"
+  },
+  "authentication": {
+    "alreadyHaveAccount": "Already have an account?",
+    "signUp": "Sign up",
+    "enterName": "Enter your name",
+    "enterEmail": "Enter your email address",
+    "createPassword": "Create a password",
+    "EnterPassword": "Enter a password"
+  },
+  "form": {
+    "submit": "Submit",
+    "loadingMessage": "Loading, please wait..."
+  },
+  "task": {
+    "startTask": "Start task"
+  },
+  "navigation": {
+    "login": "Log In",
+    "register": "Sign Up",
+    "home": "Home",
+    "title": "Test Registration"
   }
 }
+
