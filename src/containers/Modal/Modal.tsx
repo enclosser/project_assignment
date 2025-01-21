@@ -1,4 +1,5 @@
 import styles from './Modal.module.scss';
+import React from "react";
 
 
 export type ModalProps = {

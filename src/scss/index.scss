@@ -1,7 +1,5 @@
-// Импорт переменных
-@import './_variables.scss';
+@use 'variables' as *;
 
-// Базовые стили
 * {
   margin: 0;
   padding: 0;
@@ -25,7 +23,6 @@ body {
   flex-direction: column;
 }
 
-// Стили ссылок
 a {
   color: $second-color;
   text-decoration: none;
@@ -38,7 +35,6 @@ a {
   }
 }
 
-// Общая структура макета
 .layout {
   display: flex;
   flex-direction: column;
@@ -47,7 +43,6 @@ a {
   align-items: center;
 }
 
-// Навигационная панель
 .navBar {
   display: flex;
   justify-content: center;
@@ -66,7 +61,6 @@ a {
   }
 }
 
-// Форма
 .form {
   display: flex;
   flex-direction: column;
