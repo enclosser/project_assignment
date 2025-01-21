@@ -1,0 +1,38 @@
+@use '@styles/_variables' as *;
+
+.card {
+  position: relative;
+  max-width: 100%;
+  width: 400px;
+  border-radius: $border-radius;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: $quaternary-color;
+  border: 1px solid $tertiary-color;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.cardHeader {
+  font-size: $font-size-large;
+  color: $primary-color;
+  font-weight: bold;
+}
+
+.cardBody {
+  font-size: $font-size-root;
+  color: $second-color;
+}
+
+.cardFooter {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}

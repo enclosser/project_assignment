@@ -1,19 +1,20 @@
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router';
 import { routes as publicRoutes } from '@/routes/routes';
-
-function LayoutWrapper() {
-	return <Outlet />;
-}
+import Layout from './containers/Layout/Layout';
+import React from "react";
 
 const router = createBrowserRouter([
 	{
-		element: <LayoutWrapper />,
+		path: '/',
+		element: (
+			<Layout>
+				<Outlet />
+			</Layout>
+		),
 		children: publicRoutes,
 	},
 ]);
 
-function App() {
-	return <RouterProvider router={router} />;
-}
+const App: React.FC = () => <RouterProvider router={router} />;
 
 export default App;

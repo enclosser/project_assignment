@@ -1,0 +1,41 @@
+@use '@styles/_variables' as *;
+
+.anchor {
+    color: $second-color;
+    text-decoration: none;
+    font-size: $font-size-root;
+    font-family: $font-family;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+
+    &:hover {
+        color: $tertiary-color;
+        text-decoration: underline;
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px $tertiary-color;
+    }
+}
+
+.navLink {
+    color: $primary-color;
+    text-decoration: none;
+    font-size: $font-size-root;
+    font-family: $font-family;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: $second-color;
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px $tertiary-color;
+    }
+
+    &.active {
+        color: $second-color;
+        font-weight: bold;
+    }
+}

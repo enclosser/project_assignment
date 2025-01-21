@@ -1,0 +1,28 @@
+@use '@styles/_variables' as *;
+
+.input {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: $font-size-root;
+    font-family: $font-family;
+    color: $primary-color;
+    background-color: $background-color;
+    border: 2px solid $quaternary-color;
+    border-radius: $border-radius;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+    &:focus {
+        outline: none;
+        border-color: $second-color;
+        box-shadow: 0 0 8px $second-color;
+    }
+
+    &:hover {
+        border-color: $tertiary-color;
+    }
+
+    &::placeholder {
+        color: $tertiary-color;
+        opacity: 0.7;
+    }
+}
